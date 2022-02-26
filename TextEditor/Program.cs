@@ -24,5 +24,13 @@ void Open()
 
 void Edit()
 {
+    Console.Clear();
+    Console.WriteLine("Digite seu texto abaixo. (ESC para sair)");
+    Console.WriteLine("------------------------");
+    string text = "";
 
+    while(Console.ReadKey().Key != ConsoleKey.Escape)
+    {
+
+    }
 }
