@@ -37,7 +37,7 @@ void Edit()
     }
     while (Console.ReadKey().Key != ConsoleKey.Escape);
 
-    Console.Write(text);
+    Save(text);
 }
 
 void Save(string text)
@@ -50,4 +50,8 @@ void Save(string text)
     {
         file.Write(text);
     }
+
+    Console.WriteLine($"Arquivo {path} salvo com sucesso!");
+    Console.ReadLine();
+    Menu();
 }
